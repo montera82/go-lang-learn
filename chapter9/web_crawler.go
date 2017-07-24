@@ -12,11 +12,11 @@ func main() {
 		"http://www.google.com",
 		"http://www.facebook.com",
 		"http://www.twitter.com",
-    "http://www.cnn.com",
-    "http://www.konga.com",
-    "http://www.amazon.com",
-    "http://www.aliexpress.com",
-    "http://www.jumia.com",
+		"http://www.cnn.com",
+		"http://www.konga.com",
+		"http://www.amazon.com",
+		"http://www.aliexpress.com",
+		"http://www.jumia.com",
 	}
 
 	homepageChan := make(chan HomepageUrl)
@@ -41,7 +41,7 @@ func main() {
 			pageSize := len(bs)
 			pageData := HomepageUrl{url, pageSize}
 
-      fmt.Println(url, pageSize)
+			fmt.Println(url, pageSize)
 
 			homepageChan <- pageData
 
